@@ -1,4 +1,4 @@
-/* recognize tokens for the calculator and print them out */
+/* calc*/
 %{
 enum yytokentype {
     NUMBER = 258,
