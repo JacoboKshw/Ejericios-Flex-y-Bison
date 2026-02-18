@@ -1,4 +1,3 @@
-/* just like Unix wc */
 %{
 int chars = 0;
 int words = 0;
