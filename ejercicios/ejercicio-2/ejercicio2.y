@@ -1,0 +1,36 @@
+/* Ejercicio 2: Calculadora hexadecimal */
+%{
+#include <stdio.h>
+%}
+%token NUMBER
+%token ADD SUB MUL DIV ABS
+%token EOL
+%%
+calclist: /* nothing */
+    | calclist exp EOL { printf("= %d (decimal) = 0x%X (hex)\n", $2, $2); }
+    | calclist EOL
+    ;
+
+exp: factor
+    | exp ADD factor { $$ = $1 + $3; }
+    | exp SUB factor { $$ = $1 - $3; }
+    ;
+
+factor: term
+    | factor MUL term { $$ = $1 * $3; }
+    | factor DIV term { $$ = $1 / $3; }
+    ;
+
+term: NUMBER
+    | ABS term { $$ = $2 >= 0? $2 : - $2; }
+    ;
+%%
+main(int argc, char **argv)
+{
+    yyparse();
+}
+
+yyerror(char *s)
+{
+    fprintf(stderr, "error: %s\n", s);
+}

@@ -1,0 +1,17 @@
+El aprendizaje de compiladores es fundamental en ciencias de la computación.
+Flex y Bison son herramientas poderosas para crear analizadores léxicos y sintácticos.
+Los lenguajes de programación requieren parsers eficientes para interpretar el código.
+Python usa indentación para delimitar bloques de código.
+JavaScript permite funciones anónimas y clausuras avanzadas.
+La optimización prematura es la raíz de todo mal según Donald Knuth.
+Los algoritmos de ordenamiento incluyen quicksort mergesort y heapsort.
+Las estructuras de datos como árboles y grafos son esenciales.
+El paradigma funcional enfatiza inmutabilidad y funciones puras.
+La recursividad es una técnica elegante pero puede causar desbordamiento de pila.
+Los compiladores modernos realizan múltiples pasadas de optimización.
+El análisis léxico divide el código en tokens significativos.
+Las expresiones regulares describen patrones en cadenas de texto.
+Bison genera parsers LALR que son eficientes y predecibles.
+La teoría de autómatas finitos sustenta el funcionamiento de Flex.
+Los lenguajes context-free se describen mediante gramáticas BNF.
+El diseño de lenguajes requiere balance entre expresividad y simplicidad.
